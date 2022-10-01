@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --padding-container: 100px 0;
+
+}
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+/*hero*/
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: ghostwhite;
+}
+.hero:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../IMAGENES/img\ banner\ principal.png);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    z-index: -1;
+}
+.nav{
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav_items{
+    list-style: none;
+}
+.nav_link{
+    margin-left: auto;
+    padding:0%;
+    color:aliceblue;
+    text-decoration: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+.nav_link :hover{
+    text-decoration: underline;
+    color: #E10600;
+}
+.nav_menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+.nav_img{
+    display: block;
+    width: 30px;
+}
+
+/* hero container*/
+
+.hero_container{
+    max-width: 1200px;
+    display: grid;
+    --padding-container:0;
+    grid-auto-rows: max-content;
+    align-content:center;
+    gap: 1em;
+}
+.hero_title{
+    font-size: 48px;
+}
+
+/*Barra de busqueda*/
+.hero_caption{
+    color: #E10600;
+}
+
+/*Barra*/
+.hero_caption2{
+    color: #fcfcfc;
+    font-weight: 300;
+    
+}
+
+.box{
+    position:relative;
+    top: 50%;
+    left: 0;
+    width: 100%;
+}
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+input[ type="text"]{
+    background: rgba(255, 255, 255, 0.575);
+    width: 1200px;
+    height: 50px;
+    border:rgb(0, 0, 0);
+    outline: none;
+    padding: 0 25px;
+    border-radius: 15px;
+    border: 4px;
+}
+input[ type="submit"]{
+    position:absolute;
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #E10600;
+    color: aliceblue;
+    left: 1045px;
+    top: 32px;
+}
+input[ type="submit"]:hover{
+    background: #009975;
+}
+
+
+
+
