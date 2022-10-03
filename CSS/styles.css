@@ -138,6 +138,21 @@ input[ type="submit"]:hover{
     background: #009975;
 }
 
+/*servicios*/
 
-
+.container_preferenciales{
+    text-align: center;
+}
+.subtitle {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+.paragraph {
+    line-height: 1.7;
+    text-align: center;
+    padding: 0px 250px 0px 250px;
+}
 
